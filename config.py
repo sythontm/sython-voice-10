@@ -42,7 +42,7 @@ token = os.environ.get("ZTOKEN")
 DEVLOO = os.environ.get("ZDEVLO")
 
 sython1 = TelegramClient(StringSession(session1), AIP_ID, AIP_HASH)
-bot = TelegramClient("bot", APP_ID, APP_HASH).start(bot_token=token)
+bot = TelegramClient("bot", AIP_ID, AIP_HASH).start(bot_token=token)
 
 
 session2 = os.environ.get("BTERMUX")
